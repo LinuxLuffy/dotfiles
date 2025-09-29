@@ -1,0 +1,126 @@
+* {
+	border: none;
+	border-radius: 0px;
+	font-family: "Font Awesome 5 Free" , Roboto, Helvetica, Arial, sans-serif;
+}
+
+window#waybar {
+	background-color: grey;
+	background: transparent;
+	color: white;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
+
+#workspaces {
+	background: transparent;
+	font-weight: normal;
+	font-style: normal;
+	opacity: 0.8;
+}
+
+#workspaces button {
+	background-color: grey;
+	color: white;
+	transition: all 0.3s ease-in-out;
+	opacity: 0.4;
+	font-size: 20px;
+}
+
+#workspaces button.focused {
+	background-color: transparent;
+	border-top: 2px solid white;
+	min-width: 30px;
+	opacity: 1.0;
+}
+
+#workspaces button:hover {
+}
+
+#custom-brave {
+	font-size: 25px;
+	margin-left: 5px;
+	opacity: 0.9;
+}
+
+#pulseaudio {
+	padding: 0px 10px;
+	background: white;
+	border-radius: 20px;
+	color: black;
+	opacity: 0.9;
+	margin-top: 8px;
+}
+
+#battery {
+	padding: 0px 10px;
+	background: white;
+	color: black;
+	border-radius: 20px;
+	opacity: 0.9;
+	margin-top: 8px;
+}
+
+#battery.charging {
+	color: white;
+	background-color: #26A65B;
+}
+
+@keyframes blink {
+to {
+	background-color: #ffffff;
+	color: black;
+}
+
+}
+
+#battery.warning:not(.charging) {
+	background: #f53c3c;
+	color: white;
+	animation-name: blink;
+	animation-duration: 0.8s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#cpu {
+	padding: 0px 10px;
+	background: transparent;
+	border: 3px solid white;
+	border-radius: 20px;
+	opacity: 0.9;
+	margin-top: 8px;
+}
+#memory {
+	padding: 0px 10px;
+	background: transparent;
+	border: 3px solid white;
+	border-radius: 20px;
+	opacity: 0.9;
+	margin-top: 8px;
+}
+
+#custom-power {
+	font-size: 20px;
+	margin-left: 5px;
+	opacity: 0.9;
+	margin-top: 8px;
+}
+
+#network {
+	padding: 0px 10px;
+	background: grey;
+	border-radius: 20px;
+	opacity: 0.9;
+	margin-top: 8px;
+}
+
+#clock {
+	padding: 0px 10px;
+	background-color: grey;
+	border-radius: 20px;
+	opacity: 0.9;
+	margin-top: 8px;
+	margin-right: 10px;
+}

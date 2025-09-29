@@ -1,0 +1,46 @@
+{
+	//General Settings
+
+	//Position
+	"layer": "top", // Waybar at top layer
+	"position": "top", // Waybar position (top|bottom|left|right)
+	//"height": 35, // Waybar height (to be removed for auto height)
+        //"width": 1280, // Waybar width
+	"spacing": 6, // Gaps between modules (4px)
+	//"margin-top": 10,
+	"margin-bottom": 0,
+
+	//Load Modules
+	"include": ["~/.config/waybar/modules.json"],
+
+	//Modules Left
+	"modules-left": [
+		"sway/workspaces",
+		"custom/media",
+		"custom/brave",
+	],
+	
+	//Modules Center
+	"modules-center": [
+		"sway/window",
+	],
+
+	//Modules Right
+	"modules-right": [
+		"pulseaudio",
+		"backlight",
+		"battery",
+		"cpu",
+		"memory",
+		"custom/power",
+		"network",
+		"clock",
+	],
+	
+	//Custom Power
+    "custom/power": {
+        "format" : "⏻ ",
+        "on-click": "bash ~/.config/wofi/power-menu.sh",
+        "tooltip": "Power Options"
+    },
+}
