@@ -31,7 +31,7 @@ default_border pixel 2
 # Set the Wallpaper:
 #output * bg $HOME/dotfiles/Background/paris_cat.jpeg fill
 #output * bg $HOME/dotfiles/Background/rain_cat.jpeg fill
-#output * bg $HOME/dotfiles/Background/skycity.jpg fill
+output * bg $HOME/Background/skycity.jpg fill
 #output * bg $HOME/dotfiles/Background/horizon.jpeg fill
 
 #====================================#
